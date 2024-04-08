@@ -19,4 +19,12 @@ public class UserEntity {
     private String username;
     private String password;
     private String role;
+
+    public static UserEntity createUser(String username, String password, String role) {
+        UserEntity userEntity = new UserEntity();
+        userEntity.username = username;
+        userEntity.password = password;
+        userEntity.role = role;
+        return userEntity;
+    }
 }
